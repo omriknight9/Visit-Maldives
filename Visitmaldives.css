@@ -1,0 +1,645 @@
+
+@font-face {
+	font-family: "My-font";
+	src: url("fonts/droidsans.ttf");
+
+}
+
+body {
+	margin: 0;
+}
+
+#top {
+	width: 100%;
+	background-color: #20a9e1;
+	height: 40px;
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#top img:hover {
+	transform: scale(1.4) rotate(-35deg);
+}
+
+#top img {
+	width: 27px;
+	margin-right: 20px;
+	transform: rotate(0deg);
+	transition: 1.0s;
+}
+
+#bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 5px solid #DEDEDE;
+
+}
+
+#logo {
+	width: 270px;
+	transition: 1.0s;
+}
+
+#logo:hover {
+	transform: scale(1.1);
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+li {
+	width: 120px;
+	text-align: center;
+	list-style-type: none;
+	font-size: 16px;
+	min-width: 0;
+	margin-top: 10px;
+	font-weight: bold;
+	font-family: "Raleway";
+}
+
+#categories a {
+	text-decoration: none;
+}
+
+p {
+	font-family: "Raleway";
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+a:hover {
+	color: #33C6D6;
+}
+
+#search {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	align-items: center;
+	background: linear-gradient(to right, #D6FBFF 60% , #EBEBEB 40%);
+	justify-content: space-around;
+
+}
+
+input {
+	width: 220px;
+	height: 40px;
+	border-radius: 10px;
+	outline: none;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  padding-left: 10px;
+}
+
+
+#search_btn {
+	/*margin-left: 200px;*/
+	color: #fff;
+  	background-color: #28a745;
+  	width: 220px;
+  	height: 60px;
+  	border-color: #28a745;
+  	border-radius: 15px;
+  	outline: none;
+  	box-shadow: 0 5px #999;
+  	cursor: pointer;
+}
+
+#search_btn:hover {
+	color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#houses_div {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: center;
+	background-color: #32485e;
+}
+
+figcaption {
+	width: 100%;
+	color: #9E9E9E;
+}
+
+figcaption:hover {
+	color: white;
+}
+
+figure img {
+	width: 30%;
+	padding-top: 3%;
+}
+
+
+figure {
+	width: 10%;
+	text-align: center;
+	border-left: solid #00D4C9;
+	border-right: solid #00D4C9;
+	border-width: thin;
+}
+
+.fig {
+	margin: 0;
+}
+
+h3 span {
+	color: #00A8A0;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+#below_house {
+	text-align: center;
+	margin-top: 100px;
+}
+
+#after_explore {
+	text-align: center;
+}
+
+h4:after {  
+    content: '';  
+    background-color: #E0E0E0;  
+    height: 15px;  
+    display: block;  
+    position: relative;
+    bottom: 20px;
+    left: 64%;  
+    width: 27%;  
+}
+
+h4:before {  
+    content: '';  
+    background-color: #E0E0E0;  
+    height: 15px;  
+    display: block;  
+    position: relative;  
+    top: 22px;  
+    left: 9%;  
+    width: 27%;  
+}   
+
+#blue_box {
+	width: 200px;
+	padding-top: 20px;
+	padding-left: 20px;
+	color: white;
+	background-color: #1d70a3;
+	height: 499px;
+}
+
+#explore_img img {
+	height: 96.3%;
+}
+
+#explore {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	background-image: url("https://www.visitmaldives.com/wp-content/uploads/repeat.png");
+	background-attachment: fixed;
+}
+
+
+#explore h5 {
+	font-size: 20px;
+
+}
+
+#view_btn {
+	color: #fff;
+  	background-color: #28a745;
+  	width: 150px;
+  	height: 60px;
+  	border-color: #28a745;
+  	border-radius: 15px;
+  	outline: none;
+  	box-shadow: 0 5px #999;
+  	cursor: pointer;
+  	margin-left: 20px;
+}
+
+#view_btn:hover {
+	color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+#boxes {
+	display: flex;
+	position: relative;
+	left: 10%;
+}
+
+#big_box {
+	border-radius: 15px;
+	width: 400px;
+	height: 120px;
+	background-color: #2b3d50;
+}
+
+#small_box {
+	text-align: center;
+	border-radius: 15px;
+	width: 300px;
+	height: 90px;
+	font-size: 20px;
+	background-color: #d9edf7;
+	position: relative;
+	left: 50px;
+	color: #3a87ad;
+}
+
+#images_div {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+#images_div img {
+	display: block;
+	width: 99%;
+	border-radius: 5px;
+	margin-bottom: 5%;
+
+}
+
+.img_over {
+	position: relative;
+
+}
+
+.little_box {
+  	position: absolute;
+  	border-radius: 5px;
+	bottom: 26px;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 99%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.img_over:hover .little_box {
+  height: 30%;
+}
+
+
+#colorful {
+	width: 524px;
+}
+
+.little_box p {
+	height: 20px;
+	overflow: hidden;
+	position: relative;
+	padding-left: 20px;
+	color: #ccc;
+	font-size: 15px;
+}
+
+.little_box h3 {
+	margin-top: 10px;
+	padding-left: 20px;
+	color: white;
+	font-size: 22px;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+}
+
+#places {
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	height: 450px;
+	margin-left: 8.2%;
+	border-bottom: 1px solid #DEDEDE;
+	padding-bottom: 20px;
+	
+}
+
+#navigation img {
+	max-width: 150px;
+	margin-top: 5%;
+	border-radius: 150px;
+	border: 5px solid #45b2a5;
+}
+
+#navigation img:hover {
+	border-color: #308278;
+}
+
+#navigation {
+	width: 350px;
+	background-image: url(https://www.visitmaldives.com/wp-content/uploads/directory2-bg-world-7fff.jpg);
+	text-align: center;
+	margin-left: 7.5%;
+	border-radius: 5px;
+
+}
+
+#navigation h5 {
+	margin-top: 7%;
+}
+
+.places_img img {
+	max-width: 80px;
+	max-height: 100px;
+	float: left;
+	border-radius: 5px;
+	
+}
+
+.places_img {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	max-width: 100%;
+	margin-left: 2%;
+	max-height: 120px;
+}
+
+#big_div {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 100%;
+}
+
+#big_div h5 {
+	font-size: 15px;
+}
+
+.right_col {
+	position: relative;
+	right: 42%;
+}
+
+.places_img h5 {
+	font-size: 20px;
+	position: relative;
+	left: 20px;
+	width: 300px;
+}
+
+.paragraph {
+	height: 68px;
+	overflow: hidden;
+	flex-wrap: wrap;
+	position: relative;
+	font-size: 15px;
+	right: 48%;
+	top: 45px;
+	width: 200px;
+}
+
+#weather h5 {
+	font-size: 20px;
+}
+
+#weather {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-bottom: 1px solid #DEDEDE;
+	height: 400px;
+}
+
+#left_weather p {
+	width: 800px;
+}
+
+#left_weather {
+	margin-left: 6%;
+}
+
+#right_weather h5 {
+	font-size: 15px;
+	width: 550px;
+	height: 30px;
+	text-align: center;
+	background-color: #E3E3E3;
+}
+
+#right_weather span {
+	position: relative;
+	top: 25%;
+}
+
+#right_weather {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	
+
+}
+
+#right_weather h6 {
+	position: relative;
+	font-size: 70px;
+	top: 30px;
+}
+
+#right_p {
+	width: 180px;
+	bottom: 10%;
+	position: relative;
+	left: 65%;
+}
+
+#male_city h5 {
+	text-align: center;
+	font-size: 30px;
+}
+
+#male_city p {
+	text-align: center;
+
+}
+
+#male_city {
+	margin-left: 10%;
+	margin-top: 8%;
+	margin-bottom: 10%;
+	border: 1px solid #DEDEDE;
+	border-radius: 10px;
+	max-width: 80%;
+	height: 500px;
+	background-color: white;
+}
+
+#wrapper {
+	background-image: url("https://www.visitmaldives.com/wp-content/uploads/oggles-bg2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: -50px 80%;
+	height: 800px;
+	border-bottom: 1px solid #DEDEDE;
+
+}
+
+#final_btn {
+	color: #fff;
+  	background-color: #28a745;
+  	width: 150px;
+  	height: 60px;
+  	border-color: #28a745;
+  	border-radius: 15px;
+  	outline: none;
+  	box-shadow: 0 5px #999;
+  	cursor: pointer;
+  	margin-left: 45%;
+}
+
+#final_btn:hover {
+	color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+#banner {
+	max-width: 80%;
+	margin-left: 10%;
+}
+
+#geography h5 {
+	text-align: center;
+	font-size: 30px;
+}
+
+#geography p {
+	text-align: center;
+
+}
+
+#geography {
+	position: relative;
+	bottom: 12%;
+}
+
+#last_div {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	background-color: #e0e2e4;
+	height: 350px;
+	padding-top: 1%;
+}
+
+#news_contact {
+	padding-left: 50px;
+}
+
+#news_contact p {
+	font-size: 15px;
+}
+
+#recent li {
+	font-size: 10px;
+	width: 200px;
+	list-style-image: url("images/arrow1.png");
+}
+
+#recent a {
+	color: #507992;
+}
+
+#contact p {
+	font-size: 15px;
+	width: 300px;
+}
+
+#last_div h5 {
+	font-family: "My-font";
+}
+
+#recent h5 {
+	margin-left: 9%;
+}
+
+#last_input {
+	width: 100%;
+	height: 10%;
+	margin-top: 12%;
+}
+
+footer {
+	background-color: #b2b6bc;
+	display: flex;
+	margin-top: -1%;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: space-between;
+	box-shadow: 10px yellow;
+}
+
+
+
+#right_footer a {
+	color: #333;
+}
+
+#right_footer {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	padding-right: 50px;
+	align-items: center;
+}
+
+#right_footer a:hover {
+	color: white;
+}
+
+#left_footer {
+	padding-left: 50px;
+	padding-top: 1%;
+}
+
+#footer_news {
+	padding-right: 50px;
+}
